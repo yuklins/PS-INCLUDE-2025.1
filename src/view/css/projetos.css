@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Pixel";
+    src: url('../../assets/PixelifySans-VariableFont_wght.ttf') format('truetype');
+}
+
+.nav-divider {
+    height: 2px;
+    background: linear-gradient(90deg, #A8A8A8, #5A9E70, #00FF41, #5A9E70, #A8A8A8);
+    box-shadow: 0 0 10px #00FF41, inset 0 0 3px #A8A8A8;
+}
+
+body{
+    background-color: black;
+    font-family: "Pixel";
+    color: #00FF41;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding: 15px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #00FF41;
+    font-size: 20px;
+    text-shadow: 0 0 2px #00FF9D, 0 0 10px #00FF41;/* neon */
+    font-weight: bolder;
+}
+
+a:hover {
+    transform: skewX(-10deg);
+    text-shadow: 
+      1px 1px 0 #00FF41,  /* efeito video analógico no texto*/
+      1.5px 1.5px 0 #00FF9D,
+      2px 2px 0 #0066cc;
+    transition: all 0.2s ease;
+}
+
+/*ajeita isso aqui mana */
+.projeto-aba {
+    display: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 10px;
+    max-width: 1200px;
+    margin-left: 100px;
+}
+
+.imagens_div{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 25px;
+}
+
+.projeto{
+    border: 1px solid #00FF41;
+    box-shadow: 1px 1px 0 #f0f0f0;
+    width: 50%;
+}
+
+.projeto:hover{
+    transform: scale(1.1);
+    animation: glitch 1s infinite alternate;
+}
+
+@keyframes glitch {
+    0% { box-shadow: 2px 0 #FF00FF, -2px 0 #00FFFF; }
+    100% { box-shadow: -2px 0 #FF00FF, 2px 0 #00FFFF; }
+}
+
+

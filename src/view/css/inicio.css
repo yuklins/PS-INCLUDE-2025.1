@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Brutalism";
+    src: url('../../assets/Y2K Brutalism Typeface.otf') format('opentype');
+}
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;  
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+a{
+    font-family: "Brutalism";
+    color:#00FF41;
+    font-size: 30px;
+    text-shadow: 0 0 5px #00FF9D, 0 0 10px #00FF41;
+    text-decoration: none; /* removeu o sublinhado */
+    padding: 10px 15px; 
+    border: 2px solid #00FF41; 
+    transition: all 1.0s ease; 
+    background-color: #0D0D0D;
+}
+
+a:hover {
+    background: rgba(0, 255, 65, 0.1);
+    box-shadow: 0 0 30px #00FF41;
+}
